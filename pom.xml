@@ -12,11 +12,11 @@
     <parent>
         <groupId>org.yestech</groupId>
         <artifactId>yessuperpom</artifactId>
-        <version>1.1.0</version>
+        <version>1.3.0</version>
     </parent>
     <scm>
-        <connection>scm:git:git://github.com/yestech/yesos.git</connection>
-        <developerConnection>scm:git:git://github.com/yestech/yesos.git</developerConnection>
+        <connection>scm:git:git@github.com:yestech/yesos.git</connection>
+        <developerConnection>scm:git:git@github.com:yestech/yesos.git</developerConnection>
         <url>http://github.com/yestech/yesos/tree/master</url>
     </scm>
     <organization>
@@ -41,6 +41,10 @@
             </roles>
         </developer>
     </developers>
+    <ciManagement>
+        <url>http://ci.yestech.org</url>
+        <system>hudson</system>
+    </ciManagement>
     <dependencies>
         <dependency>
             <groupId>org.yestech</groupId>
@@ -207,12 +211,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>maven.java.net</id>
-            <name>Java.net Maven2 Repository</name>
-            <url>http://download.java.net/maven/2</url>
-        </pluginRepository>
-    </pluginRepositories>
 </project>
